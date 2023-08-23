@@ -10,5 +10,5 @@ def separador(chain):
         diccionario[palabra]=frecuencia
     return diccionario
 
-sacha = separador(oracion)
-print(f"Diccionario PALABRA : FRECUENCIA\n{sacha}")
+dic = separador(oracion)
+print(f"Diccionario PALABRA : FRECUENCIA\n{dic}")

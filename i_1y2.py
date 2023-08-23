@@ -3,7 +3,6 @@
 # Luego, dividimos b=12 por r=2. El cociente es q=6 y el resto es r=0. 
 # Como el resto es 0, el MCD de 50 y 12 es el último divisor no nulo, 
 # que en este caso es b=2.
-
 def MCD(a,b):
     r = a%b #resto
     if r!=0:
@@ -17,7 +16,6 @@ def MCD(a,b):
 
 # Para calcular el mcm(a, b) se utiliza el MCD(a, b)
 # junto a ésta fórmula mcm = (a * b) / MCD(a, b)
-
 def mcm(a, b):
     m = MCD(a,b)
     r = (a*b)/m 
