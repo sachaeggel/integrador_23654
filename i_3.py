@@ -1,15 +1,14 @@
 oracion = input("Escribir una oración:\n")
 
-def separador(cad):
+def separador(chain):
     diccionario = {}
-    cadena = cad.split()
-    unico = set(cadena)
-    for palabra in cadena:
-        x = cad.count(cadena)
-        #if x > 1:
-        diccionario[x]=palabra #acá está el quilombo, reemplaza palabra!!
+    palabras = chain.split()
+#    unico = list(set(palabras))
+    unico = set(palabras)
+    for palabra in unico:
+        frecuencia = palabras.count(palabra)
+        diccionario[palabra]=frecuencia
     return diccionario
 
-
 sacha = separador(oracion)
-print(sacha)
+print(f"Diccionario PALABRA : FRECUENCIA\n{sacha}")
